@@ -1,0 +1,57 @@
+// Good for Capstone to style the workouts being rendered
+.portfolio-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 215, 155);
+
+    
+    .books-wrapper {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-items: center;
+        gap: 25px;
+        margin-top: 25px;
+        
+        .book-wrapper {
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                max-height: 4.5em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+            .expanded p{
+                max-height: none;
+                -webkit-line-clamp: unset;
+
+            }
+            button{
+                background: none;
+                border: none;
+                color: blue($color: #000000);
+                cursor: pointer;
+                padding: 0;
+            }
+
+            a {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
