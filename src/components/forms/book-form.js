@@ -24,13 +24,17 @@ export default function bookform(props) { console.log("re-rendering from Book Fo
           value={props.review}
           onChange={props.handleChange}
       ></textarea>
+      <div className="recommendRow">
+        <h3>Recommend Book</h3>
       <input 
           type="checkbox"
           name="recommend"
           checked={props.recommend}
           onChange={props.handleCheck}
       />
-      <button type="submit">{props.submitText}</button>
+      </div>
+  
+      <button type="submit" className="submitButton">{props.submitText}</button>
     </form> 
    )
 }

@@ -1,0 +1,46 @@
+.book-detail-wrapper, .add-book-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the wrapper */
+    width: 100%; /* Adjust based on your design */
+    height: 100%; /* Adjust based on your design */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    // min-height: 100vh; /* Minimum height to fill the viewport */
+    background-image: url('../../static/assets/images/bookWorms.png');
+    background-size: cover; /* Cover the entire area of book-detail-wrapper */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+
+.submitButton, .portfolio-return, .add-book-btn{
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c; /* Green color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Margin above the button */
+  }
+
+  .deleteBook {
+    width: 10%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c; /* Green color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Margin above the button */  
+}
+  
+.add-book-wrapper > .portfolio-return > button:hover, .submitButton > button:hover, .portfolio-return > button:hover, .portfolio-return > .add-book-btn > button:hover {
+    background-color: #065f06; /* Slightly darker green on hover */
+  }

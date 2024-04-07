@@ -87,9 +87,11 @@ export default class BookDetails extends Component {
         
            <div className='book-detail-wrapper'>
             
-             <button clasName="portfolio-return">
-             <Link to="/portfolio">Back to Portfolio</Link>
-             </button>
+             
+             <Link to="/portfolio">
+                <button className="portfolio-return">Back to Portfolio</button>
+            </Link>
+             
              <h3>Fill out the form to update this book!</h3>
              <BookForm 
              
@@ -102,7 +104,7 @@ export default class BookDetails extends Component {
                 handleSubmit={this.handleSubmit}
                 submitText="Update Book"
             />
-            <button onClick={this.handleDelete}>Delete Book</button>
+            <button className="deleteBook" onClick={this.handleDelete}>Delete Book</button>
         
            </div>
        )

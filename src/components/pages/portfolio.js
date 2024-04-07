@@ -106,9 +106,11 @@ export default class Portfolio extends Component {
 
         return(
             <div className="portfolio-wrapper">
-                <Link to="/portfolio/add-book">
-                    <button>Add Book</button>
-                </Link>
+                
+                    <Link to="/portfolio/add-book">
+                        <button className="add-book-btn">Add Book</button>
+                    </Link>
+                
 
                 <div className="books-wrapper">
                     {this.renderBooks()}  

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Cookies from 'js-cookie';
 import BookForm from "../forms/book-form";
+import { Link } from "react-router-dom";
 
 export default class AddBook extends Component {
    constructor(props) {
@@ -61,9 +62,11 @@ export default class AddBook extends Component {
 
        return (
            <div className='add-book-wrapper'>
-            <button clasName="portfolio-return">
-             <Link to="/portfolio">Back to Portfolio</Link>
-             </button>
+                
+                    <Link to="/portfolio">
+                        <button className="portfolio-return">Back to Portfolio </button>
+                    </Link>
+               
             <h3>Fill out the form to add a new book!</h3>
             <BookForm 
                 title={this.state.title}
