@@ -92,9 +92,10 @@ export default class BookDetails extends Component {
                 <button className="portfolio-return">Back to Portfolio</button>
             </Link>
              
-             <h3>Fill out the form to update this book!</h3>
-             <BookForm 
-             
+             <div className="h3Div">
+                <h3>Fill out the form to update this book!</h3>
+             </div>
+             <BookForm              
                 title={this.state.title}
                 author={this.state.author}
                 review={this.state.review}

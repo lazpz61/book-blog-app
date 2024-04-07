@@ -25,7 +25,7 @@ export default function bookform(props) { console.log("re-rendering from Book Fo
           onChange={props.handleChange}
       ></textarea>
       <div className="recommendRow">
-        <h3>Recommend Book</h3>
+        <span>Recommend Book</span>
       <input 
           type="checkbox"
           name="recommend"

@@ -63,11 +63,12 @@ export default class AddBook extends Component {
        return (
            <div className='add-book-wrapper'>
                 
-                    <Link to="/portfolio">
-                        <button className="portfolio-return">Back to Portfolio </button>
-                    </Link>
-               
-            <h3>Fill out the form to add a new book!</h3>
+            <Link to="/portfolio">
+                <button className="portfolio-return">Back to Portfolio </button>
+            </Link>
+            <div className="h3Div"> 
+                <h3>Fill out the form to add a new book!</h3>
+            </div>
             <BookForm 
                 title={this.state.title}
                 author={this.state.author}
