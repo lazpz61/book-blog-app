@@ -62,7 +62,7 @@
                 font-size: 16px; /* Adjust as needed */
                 transition: background-color 0.3s;
                 cursor: pointer; /* Changes cursor to pointer */
-                // border-radius: 4px; /* Rounded borders */
+                border-radius: 4px; /* Rounded borders */
                 
             }
             
@@ -72,8 +72,10 @@
                 border-color: darkred; /* Darker red on hover - replace with actual color */
             }
             .span-logout:hover {
-                background-color: #1eff00; /* Lighter gray on hover */
+                background-color: rgb(177, 245, 113); /* Lighter gray on hover */
                 border-color: darkred; /* Darker red on hover - replace with actual color */
+                color: red;
+                text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
             }
     }
 

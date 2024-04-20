@@ -69,8 +69,9 @@
     margin-top: 10px; /* Margin above the button */  
 }
   
-.add-book-wrapper > .portfolio-return > button:hover, .submitButton > button:hover, .portfolio-return > button:hover, .portfolio-return > .add-book-btn > button:hover {
-    background-color: #065f06; /* Slightly darker green on hover */
+ .add-book-btn:hover, .portfolio-return:hover, .deleteBook:hover, .submitButton:hover {
+    background-color: gold; /* Slightly darker green on hover */
+    color:Green;
 
   }
 
